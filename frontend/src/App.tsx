@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
+import { BookSection } from './components/BookSection';
 import { Expertise } from './components/Expertise';
 import { Location } from './components/Location';
 import { FAQ } from './components/FAQ';
@@ -27,6 +28,7 @@ function App() {
       <main className="pt-16">
         <Hero />
         <About />
+        <BookSection />
         <Expertise />
         <Location />
         <FAQ />

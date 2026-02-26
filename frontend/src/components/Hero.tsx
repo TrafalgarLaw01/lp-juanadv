@@ -1,6 +1,6 @@
 import { contactInfo } from '../data/mockData';
 import { motion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, ChevronDown } from 'lucide-react';
+import { ArrowRight, ChevronDown } from 'lucide-react';
 
 export const Hero = () => {
     return (
@@ -42,10 +42,13 @@ export const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-md shadow-[0_0_15px_rgba(212,175,53,0.15)]"
+                    className="flex justify-center mb-6"
                 >
-                    <ShieldCheck size={16} className="text-primary" />
-                    <span className="text-primary text-xs font-bold tracking-widest uppercase">Direito Criminal de Elite</span>
+                    <img
+                        src="/images/logo.png"
+                        alt="Logo Montiel Advocacia"
+                        className="h-24 md:h-32 object-contain"
+                    />
                 </motion.div>
 
                 <motion.h2
@@ -64,7 +67,7 @@ export const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                     className="text-slate-300 md:text-slate-400 text-lg md:text-2xl font-light leading-relaxed max-w-3xl mx-auto"
                 >
-                    Especialista em Ciências Criminais focado em <strong className="font-semibold text-slate-200">resultados tangíveis</strong> e <strong className="font-semibold text-slate-200">sigilo absoluto</strong> para casos sensíveis e de alta complexidade.
+                    Especialista em Ciências Criminais focado em <strong className="font-semibold text-slate-200">resultados tangíveis</strong> para casos sensíveis e de alta complexidade.
                 </motion.p>
 
                 <motion.div
