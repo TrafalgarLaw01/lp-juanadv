@@ -46,14 +46,12 @@ export const BookSection = () => {
                             <p>
                                 O livro traça a sistematização histórica do <span className="italic">plea bargaining</span> desde suas raízes na Inglaterra até sua consolidação nos Estados Unidos no século XIX. A obra analisa criticamente como a negociação no processo criminal promove uma constante erosão nos conceitos clássicos de voluntariedade e coerção, tornando-se uma lógica irreversível no direito contemporâneo.
                             </p>
+                            <p>
+                                Obra Crítica sobre instituto que dá novo impulso aos Acordos Penais nas legislações do ocidente, de modo a contextualizar a prática no Brasil.
+                            </p>
                         </div>
 
-                        <div className="relative pl-6 py-2 border-l-4 border-primary/60 bg-white/[0.02] rounded-r-md mt-6">
-                            <p className="text-slate-200 italic font-medium leading-relaxed">
-                                "Com muita alegria apresento minha dissertação de mestrado da PUCRS que foi lançada como livro físico pela Editora LumenJuris."
-                            </p>
-                            <p className="text-primary text-sm font-bold tracking-wide mt-3 uppercase">— Juan Marcel Montiel Santander</p>
-                        </div>
+
 
                         <div className="pt-8 border-t border-border-muted/30 mt-8">
                             <p className="text-sm font-medium text-slate-400 mb-6 uppercase tracking-wider">Adquira seu exemplar:</p>

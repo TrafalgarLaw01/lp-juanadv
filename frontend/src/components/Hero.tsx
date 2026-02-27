@@ -1,10 +1,10 @@
 import { contactInfo } from '../data/mockData';
 import { motion } from 'framer-motion';
-import { ArrowRight, ChevronDown } from 'lucide-react';
+import { ArrowRight, ChevronDown, Instagram } from 'lucide-react';
 
 export const Hero = () => {
     return (
-        <section className="relative min-h-[95vh] flex flex-col items-center justify-center px-6 pt-20 pb-12 overflow-hidden bg-background-dark">
+        <section className="relative min-h-[95vh] flex flex-col items-center justify-center px-6 pt-16 md:pt-12 pb-12 overflow-hidden bg-background-dark">
             {/* Animated Background Orbs */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <motion.div
@@ -37,17 +37,17 @@ export const Hero = () => {
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
             </div>
 
-            <div className="relative z-10 text-center space-y-8 max-w-5xl mx-auto mt-12 md:mt-20">
+            <div className="relative z-10 text-center space-y-4 max-w-5xl mx-auto mt-6 md:mt-8">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="flex justify-center mb-6"
+                    className="flex justify-center mb-1 md:mb-2"
                 >
                     <img
                         src="/images/logo.png"
                         alt="Logo Montiel Advocacia"
-                        className="h-24 md:h-32 object-contain"
+                        className="h-64 sm:h-[280px] md:h-32 lg:h-36 object-contain"
                     />
                 </motion.div>
 
@@ -55,7 +55,7 @@ export const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-                    className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1] tracking-tight text-slate-100 drop-shadow-lg"
+                    className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight tracking-tight text-slate-100 drop-shadow-lg"
                 >
                     Defesa Criminal <br className="hidden md:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#fcedb3] to-primary bg-[length:300%_auto] animate-gradient">Estratégica</span> e Consultoria
@@ -65,7 +65,7 @@ export const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                    className="text-slate-300 md:text-slate-400 text-lg md:text-2xl font-light leading-relaxed max-w-3xl mx-auto"
+                    className="text-slate-300 md:text-slate-400 text-base md:text-xl lg:text-2xl font-light leading-snug md:leading-relaxed max-w-3xl mx-auto px-4"
                 >
                     Especialista em Ciências Criminais focado em <strong className="font-semibold text-slate-200">resultados tangíveis</strong> para casos sensíveis e de alta complexidade.
                 </motion.p>
@@ -74,7 +74,7 @@ export const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                    className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-6"
+                    className="pt-2 md:pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6"
                 >
                     <a
                         href={contactInfo.whatsappUrl}
@@ -88,6 +88,18 @@ export const Hero = () => {
                         </span>
                         {/* Shine Effect */}
                         <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-[150%] skew-x-[-45deg] group-hover:animate-shine" />
+                    </a>
+
+                    <a
+                        href={contactInfo.instaLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative flex items-center justify-center gap-3 w-full sm:w-auto bg-transparent border-2 border-primary text-primary px-10 py-[18px] rounded-full text-base font-bold tracking-wide hover:bg-primary/10 hover:shadow-[0_0_30px_-10px_rgba(212,175,53,0.4)] hover:scale-105 active:scale-95 transition-all duration-300 overflow-hidden"
+                    >
+                        <span className="relative z-10 flex items-center gap-2">
+                            <Instagram size={20} className="group-hover:scale-110 transition-transform" />
+                            Atuações publicadas
+                        </span>
                     </a>
                 </motion.div>
             </div>

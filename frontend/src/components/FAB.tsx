@@ -1,12 +1,35 @@
+import { useState, useEffect } from 'react';
 import { contactInfo } from '../data/mockData';
 
 export const FAB = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // Mostra o botão se o scroll passar de 300px (suficiente para sair dos botões da hero no mobile)
+            if (window.scrollY > 300) {
+                setIsVisible(true);
+            } else {
+                setIsVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        // Checa inicialmente 
+        handleScroll();
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <a
             href={contactInfo.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-[0_0_20px_rgba(37,211,102,0.3)] hover:scale-110 hover:shadow-[0_0_25px_rgba(37,211,102,0.5)] active:scale-95 transition-all group"
+            className={`fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-[0_0_20px_rgba(37,211,102,0.3)] hover:scale-110 hover:shadow-[0_0_25px_rgba(37,211,102,0.5)] active:scale-95 transition-all duration-500 ease-in-out group ${isVisible
+                    ? 'opacity-100 translate-y-0 pointer-events-auto'
+                    : 'opacity-0 translate-y-10 pointer-events-none md:opacity-100 md:translate-y-0 md:pointer-events-auto'
+                }`}
             aria-label="Fale conosco pelo WhatsApp"
         >
             <svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg" className="transform group-hover:rotate-12 transition-transform">
