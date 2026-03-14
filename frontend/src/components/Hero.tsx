@@ -45,7 +45,7 @@ export const Hero = () => {
                     className="flex justify-center mb-1 md:mb-2"
                 >
                     <img
-                        src="/images/logo.png"
+                        src="/logo2without.png"
                         alt="Logo Montiel Advocacia"
                         className="h-64 sm:h-[280px] md:h-32 lg:h-36 object-contain"
                     />

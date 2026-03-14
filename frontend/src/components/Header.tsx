@@ -16,7 +16,7 @@ export const Header = ({ isDark, toggleTheme }: HeaderProps) => {
             <div className="flex items-center justify-between p-4 max-w-7xl mx-auto">
                 <div className="flex items-center">
                     <img
-                        src="/images/logo.png"
+                        src="/logo2without.png"
                         alt="Montiel Advocacia"
                         className="h-10 w-auto object-contain rounded-sm"
                     />
