@@ -10,7 +10,7 @@ export const About = () => {
                     <img
                         alt="Juan Marcel Montiel Santander - Advogado Criminalista"
                         className="object-cover w-full h-full scale-100 group-hover:scale-105 transition-all duration-700"
-                        src="/persona.jpg"
+                        src="/persona-update.jpeg"
                     />
                     <div className="absolute bottom-4 left-4 z-20">
                         <p className="text-primary text-xs font-bold tracking-widest uppercase">Fundador</p>

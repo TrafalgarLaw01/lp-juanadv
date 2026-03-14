@@ -57,7 +57,7 @@ export const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                     className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight tracking-tight text-slate-100 drop-shadow-lg"
                 >
-                    Defesa Criminal <br className="hidden md:block" />
+                    Advocacia Criminal <br className="hidden md:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#fcedb3] to-primary bg-[length:300%_auto] animate-gradient">Estratégica</span> e Consultoria
                 </motion.h2>
 
@@ -67,7 +67,7 @@ export const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                     className="text-slate-300 md:text-slate-400 text-base md:text-xl lg:text-2xl font-light leading-snug md:leading-relaxed max-w-3xl mx-auto px-4"
                 >
-                    Especialista em Ciências Criminais focado em <strong className="font-semibold text-slate-200">resultados tangíveis</strong> para casos sensíveis e de alta complexidade.
+                    Especialista em Direito Penal e Direito Processual Penal focado em <strong className="font-semibold text-slate-200">resultados tangíveis</strong> para casos sensíveis e de alta complexidade.
                 </motion.p>
 
                 <motion.div
